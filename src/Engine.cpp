@@ -1,4 +1,5 @@
 #include "Engine.h"
+#include "Player.h"
 
 Engine::Engine()
     : window(sf::VideoMode({800, 600}), "TopDown Engine")
@@ -32,11 +33,12 @@ void Engine::processEvents()
 
 void Engine::update(float dt)
 {
-    // empty
+    player.update(dt);
 }
 
 void Engine::render()
 {
     window.clear();
+    player.render(window);
     window.display();
 }

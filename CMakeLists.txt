@@ -17,6 +17,7 @@ FetchContent_MakeAvailable(SFML)
 add_executable(TopDownEngine
     src/main.cpp
     src/Engine.cpp
+    src/Player.cpp
 )
 
 target_link_libraries(TopDownEngine PRIVATE SFML::Graphics SFML::Window SFML::System)

@@ -1,4 +1,5 @@
 #pragma once
+#include "Player.h"
 #include <SFML/Graphics.hpp>
 
 class Engine
@@ -14,4 +15,5 @@ private:
 
 private:
     sf::RenderWindow window;
-};  
+    Player player;
+};
