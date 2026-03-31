@@ -1,0 +1,21 @@
+# build
+build/
+
+# cmake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# ninja
+.ninja*
+build.ninja
+
+# binaries
+*.exe
+*.dll
+*.so
+
+# object files
+*.o
+*.obj
