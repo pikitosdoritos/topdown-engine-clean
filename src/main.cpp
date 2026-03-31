@@ -1,23 +1,8 @@
-#include <SFML/Graphics.hpp>
-#include <optional>
+#include "Engine.h"
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({800, 600}), "TopDown Engine");
-
-    while (window.isOpen())
-    {
-        while (const std::optional<sf::Event> event = window.pollEvent())
-        {
-            if (event->is<sf::Event::Closed>())
-            {
-                window.close();
-            }
-        }
-
-        window.clear();
-        window.display();
-    }
-
+    Engine engine;
+    engine.run();
     return 0;
 }
